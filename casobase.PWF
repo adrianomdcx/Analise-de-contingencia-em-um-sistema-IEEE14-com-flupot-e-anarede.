@@ -1,0 +1,121 @@
+(
+( Gravacao de .PWF - CART
+( Versao do Anarede: 13.00.00
+( Data e Hora da Gravacao: 13/06/2026 - 18:35:19                                                           
+(
+TITU
+Ex.2 - Anarede V09 - Sistema 15 Barras-Versao Grafica                           
+DOPC IMPR
+(Op) E (Op) E (Op) E (Op) E (Op) E (Op) E (Op) E (Op) E (Op) E (Op) E
+IMPR L NEWT L RCVG L RMON L 80CO L NOVO L MFCT L PMIN L INMN L UNPG L
+99999
+DCTE
+(Mn) ( Val) (Mn) ( Val) (Mn) ( Val) (Mn) ( Val) (Mn) ( Val) (Mn) ( Val) 
+BASE   100. DASE   100. TEPA     .1 EXST     .4 TETP     .5 TBPA     5.
+TLPP     1. TEPR     .1 QLST     .4 TLPR     1. TLPQ     2. TSBZ    .01
+TSBA     5. ASTP    .05 VSTP     .1 TLVC     .5 TLTC     .1 TSFR  .1E-7
+ZMAX   500. TLPV     .5 VDVM   150. VDVN    50. TUDC    .01 TADC    .01
+PGER    30. TPST     .1 VFLD    70. ZMIN    .01 HIST    470 LFIT     10
+ACIT     30 LFCV      1 DCIT     10 VSIT     10 LPIT     20 LFLP      5
+PDIT      1 LCRT     24 LPRT     60 CSTP     5. ASDC     1.
+ICIT     30 DMAX      5 FDIV     2. ICMN    .05 VART     5. TSTP     32
+ICMV     .5 APAS    90. CPAR    70. VAVT     2. VAVF     5. VMVF    15.
+VPVT     2. VPVF     5. VPMF    10. VSVF    20. VINF     1. VSUP     1.
+TLSI     0. NDIR    20. STTR     5. TRPT   100. STIR     1. BFPO     1.
+LFPO     .1 TLMT     0. TLMF     0. TLMG     0. PARS    10.            
+99999
+DBAR
+(Num)OETGb(   nome   )Gl( V)( A)( Pg)( Qg)( Qn)( Qm)(Bc  )( Pl)( Ql)( Sh)Are(Vf)M(1)(2)(3)(4)(5)(6)(7)(8)(9)(10
+    1 L2 1BARRA01--138 21060  0.269.5-12.2 -30.  20.                      101060                                   
+    2 L1 1BARRA02--138 21045-3.327.43 36.2 -40.  50.      32.5519.05      101045                                   
+    3 L1 1BARRA03--138 21010-14.   0.63.86   0.  40.      141.3 28.5      101010                                   
+    4 L  1BARRA04--138 11010-9.3                           71.7-5.85      101020                                   
+    5 L  1BARRA05--138 21010-6.7                          -150.-52.5      101010                                   
+    6 L1 SBARRA06---66 21062-22.  40.-9.32  -6.  24.      187.2-37.4      201062                                   
+    7 L   BARRA07-FICT 11002-13.                                          301032                                   
+    8 L1 TBARRA08---33 2 935-13.   0.-35.6 -20.  20.     9                30 935                                   
+    9 L  SBARRA09---66 21025-15.                           29.5 16.6  19. 301025                                   
+   10 L  SBARRA10---66 21028-17.                             9.  5.8      301046                                   
+   11 L  SBARRA11---66 21041-20.                            3.5  1.8      301056                                   
+   12 L1 SBARRA12---66 21040-22.   0.-2.88 -15.  25.                      201040                                   
+   13 L  SBARRA13---66 21046-22.                          19.448.352      201057                                   
+   14 L1 SBARRA14---66 21068-16.47.6912.55  10.  30.       14.9   5.      301068                                   
+   15 L  1BARRA015-138 21010-9.8                                          101020                                   
+99999
+DLIN
+(De )d O d(Pa )NcEPM( R% )( X% )(Mvar)(Tap)(Tmn)(Tmx)(Phs)(Bc  )(Cn)(Ce)Ns(Cq)(1)(2)(3)(4)(5)(6)(7)(8)(9)(10 (U) Uop
+    1         2 1     1.94  5.92  5.28                          100.200.  100.
+    1         2 2     1.94  5.92  5.28                          100.200.  100.
+    1         5 1      5.4  22.3  4.92                          100.200.  100.
+    2         3 1      4.7  19.8  4.38                          100.200.  100.
+    2         4 1     5.81 17.63  3.75                          100.200.  100.
+    2         5 1     5.69 17.39   3.4                          100.200.  100.
+    3         4 1      6.7  17.1  3.46                          100.200.  100.
+    4         7 1          20.91       .978                     100.200.  100.                                 1   1
+    4         9 1          55.62       .969                     100.200.  100.                                 1   1
+    5         6 1           25.2         .9   .9  1.1          5100.200.32100.                                 1   1
+    6        11 1      9.5 19.89                                 50.150.   50.
+    6        12 1    12.29 25.58                                 50.150.   50.
+    6        13 1     6.61 13.03                                 50.150.   50.
+    7         8 1          17.62         1.                      30.130.   30.                                 1   1
+    7         9 1            11.         1.                     100.200.  100.                                 1   1
+    9        10 1     3.18  8.45                                 50.150.   50.
+    9        14 1    12.71 27.04                                 50.150.   50.
+   10        11 1      8.2 19.21                                 50.150.   50.
+   12        13 1    22.09 19.99                                 50.150.   50.
+   13        14 1    17.09  34.8                                 50.150.   50.
+   15         5 1     1.34    5.  1.28                          100.200.  100.
+99999
+DCSC
+(De ) O  (Pa )NcEPB      (Xmin)(Xmax)( Xv )C ( Vsp) (Ext)Nst(Cn)(Ce)(Cq)(1)(2)(3)(4)(5)(6)(7)(8)(9)(10
+    4       15 1           -.79  -.79  -.79X   -.79     4   999999999999
+99999
+DSHL
+(De ) O  (Pa )Nc (Shde)(Shpa) ED EP
+    2        3 1          -5.     L
+99999
+DGER
+(No ) O (Pmn ) (Pmx ) ( Fp) (FpR) (FPn) (Fa) (Fr) (Ag) ( Xq) (Sno) (Est)
+    1      40.  269.7   20.  100.                                 9   0.
+    2      20.    60.   20.  100.                                 9   0.
+    3       0.   150.    0.  100.                                 9   0.
+    6       5.    40.   20.  100.                                 9   0.
+    8       0.    50.    0.  100.                                 9   0.
+   12       0.    80.    0.  100.                                 9   0.
+   14       5.    50.   20.  100.                                 9   0.
+99999
+DCAR
+(tp) (no ) C (tp) (no ) C (tp) (no ) C (tp) (no ) O (A) (B) (C) (D) (Vfl)
+barr    10                                        A  35   0   4  46   70.
+99999
+DGLT
+(G (Vmn) (Vmx) (Vmne (Vmxe
+ 2   .95  1.04   .95  1.04
+ 1    .9  1.05    .9  1.05
+99999
+DARE
+(Ar    (Xchg)     (      Identificacao da area       ) (Xmin) (Xmax)
+ 10      140.     * AREA 1 / NIVEL DE TENSAO  138 KV *   139.   141. 
+ 20     -130.     * AREA 2 / NIVEL DE TENSAO   66 KV *  -131.  -129. 
+ 30      -10.     * AREA 3 / NIVEL DE TENSAO   33 KV *   -10.    -9. 
+99999
+DVCO
+(No ) O T Pr (GerMW) (Rej %) (Peso Ns C
+    1   G    190.869                   
+    2   G       35.6                   
+    6   G        10.                   
+   14   G       42.4                   
+99999
+DMOT
+(Num) OE GrS(C) (U) ( Rs) ( Xs) ( Xm) ( Rr) ( Xr) (HPb) (T) (P) (B)
+   12     1 100   6    .7   10.  340.  1.02  7.06  800.             
+   12     2 100   5    .6    9.  320.    1.    7.  800.             
+99999
+DGBT
+(G ( kV)
+ 1  138.
+ S   66.
+ T   33.
+ 0    1.
+99999
+FIM
