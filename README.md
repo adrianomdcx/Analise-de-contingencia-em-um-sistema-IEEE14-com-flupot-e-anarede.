@@ -13,8 +13,4 @@ Este repositório reúne os arquivos de um trabalho da disciplina Análise de Si
 - `asp_cart_base.pch`: exportação do caso-base em formato PWF, conforme indicado no cabeçalho.
 - `casobase.lst`: configuração gráfica do diagrama, incluindo cores e posições dos elementos.
 
-## Observações sobre os arquivos
 
-Os cabeçalhos dos arquivos PWF identificam o sistema como uma rede de 15 barras, embora o nome do repositório e alguns nomes de arquivo mencionem IEEE 14 barras. O relatório disponível também descreve uma execução do caso-base; não encontrei nele a identificação de casos de contingência.
-
-Há ainda uma diferença de nomes: `asp_completo.out` registra a leitura de `asp_ieee14.fpo`, mas esse arquivo não está no repositório. A configuração FPO incluída aqui se chama `codigo_flupot.fpo`. O relatório também informa que comandos como DOPC, DCTE e DGER foram desconsiderados. Esses pontos merecem conferência antes de tentar reproduzir a execução ou atribuir os resultados a esta configuração.
