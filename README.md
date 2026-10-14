@@ -2,5 +2,7 @@
 
 Esse repositório contém códigos para inscrição de .fpo, linguagem lida pelo flupot que otimiza a análise e retirada de violações em um sistema IEEE 14 barras, os códigos acompanham o arquivo com situação normal, após a correção da violação pelo software.
 
-Trabalho desenvolvido na disciplina Análise de sistemas de potência -EEE581 no primeiro semestre de 2026. Ministrada pela profa.: Carmen Lucia
+Trabalho desenvolvido na disciplina Análise de sistemas de potência -EEE581 no primeiro semestre de 2026. Ministrada pela profa.: Carmen Lucia.
+
+Arquivos .fpo para FLUPOT no IEEE 14 barras, usados para otimizar e remover violações. Inclui casobase.pwf e seu respectivo .lst e arquivo PWF com as correções finais(CORRIGIDO.PWF), com a função objetivo MCNT(minimização de ações de controle), controles QGEN/VGEN/TAPC/PGEN, limites FMVA e tolerâncias PTOL/QTOL.
 
