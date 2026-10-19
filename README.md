@@ -1,41 +1,36 @@
-# Análise de contingências e correção de violações com ANAREDE e FLUPOT
+# Análise de contingências com ANAREDE e FLUPOT
 
-## Relatório: metodologia por análise de sensibilidade no ANAREDE
+**[Ler o relatório: análise de sensibilidade no ANAREDE e correção de violações em contingências](https://github.com/adrianomdcx/Analise-de-contingencia-em-um-sistema-IEEE14-com-flupot-e-anarede./blob/metodologia-sensibilidade-anarede/relatorios/Metodologia_ANAREDE_Sensibilidade_e_Correcao_de_Violacoes_em_Contingencias.pdf)**
 
-**[Abrir o relatório completo em PDF (56 páginas)](https://github.com/adrianomdcx/Analise-de-contingencia-em-um-sistema-IEEE14-com-flupot-e-anarede./blob/metodologia-sensibilidade-anarede/relatorios/Metodologia_ANAREDE_Sensibilidade_e_Correcao_de_Violacoes_em_Contingencias.pdf)**
+O relatório mostra como a análise de sensibilidade do ANAREDE pode ajudar a escolher ajustes de tensão, geração ativa e taps de transformadores para corrigir violações na rede. O estudo começa pelo caso base e depois avalia a saída de circuitos pelo critério N-1.
 
-O relatório apresenta uma metodologia para corrigir violações operativas com o auxílio da análise de sensibilidade do ANAREDE. Os controles de tensão, geração ativa e taps de transformadores são ajustados de forma iterativa, com recálculo do fluxo de potência e avaliação de contingências pelo critério N-1.
+Também estão disponíveis os arquivos de um estudo feito com **FLUPOT**, voltado ao ajuste do ponto de operação por fluxo de potência ótimo. Os dois trabalhos estão identificados abaixo para facilitar a consulta.
 
-**O PDF está na branch [`metodologia-sensibilidade-anarede`](https://github.com/adrianomdcx/Analise-de-contingencia-em-um-sistema-IEEE14-com-flupot-e-anarede./tree/metodologia-sensibilidade-anarede).** Os arquivos de simulação que já estavam neste repositório pertencem ao **estudo realizado com FLUPOT** e agora estão reunidos em [`estudo-flupot/`](estudo-flupot/).
+## Onde encontrar o material
 
-## Onde encontrar cada estudo
+| Estudo | Material disponível |
+| --- | --- |
+| **ANAREDE: análise de sensibilidade e contingências** | [Relatório completo, com 56 páginas](https://github.com/adrianomdcx/Analise-de-contingencia-em-um-sistema-IEEE14-com-flupot-e-anarede./blob/metodologia-sensibilidade-anarede/relatorios/Metodologia_ANAREDE_Sensibilidade_e_Correcao_de_Violacoes_em_Contingencias.pdf) e [guia de leitura](https://github.com/adrianomdcx/Analise-de-contingencia-em-um-sistema-IEEE14-com-flupot-e-anarede./tree/metodologia-sensibilidade-anarede/relatorios), na branch `metodologia-sensibilidade-anarede`. |
+| **FLUPOT: fluxo de potência ótimo** | Entradas, configurações e resultados na pasta [`estudo-flupot/`](estudo-flupot/), disponível na branch `main`. |
 
-| Material | Abordagem | Localização |
-| --- | --- | --- |
-| Relatório da metodologia com ANAREDE | Análise de sensibilidade, ajustes de controles e correção de violações no caso base e em contingências | [PDF completo](https://github.com/adrianomdcx/Analise-de-contingencia-em-um-sistema-IEEE14-com-flupot-e-anarede./blob/metodologia-sensibilidade-anarede/relatorios/Metodologia_ANAREDE_Sensibilidade_e_Correcao_de_Violacoes_em_Contingencias.pdf) · [Documentação do relatório](https://github.com/adrianomdcx/Analise-de-contingencia-em-um-sistema-IEEE14-com-flupot-e-anarede./tree/metodologia-sensibilidade-anarede/relatorios) |
-| Arquivos e resultados do estudo com FLUPOT | Fluxo de potência ótimo, com função objetivo MCNT e restrição de carregamento FMVA | [Pasta `estudo-flupot/`](estudo-flupot/) na branch `main` |
+## Como foi feito o estudo com ANAREDE
 
-## Metodologia documentada no relatório
+A análise começa pela identificação das violações no caso base. Com as sensibilidades obtidas pela ferramenta EXSB, são escolhidos os controles que podem ajudar em cada situação. Depois de cada ajuste, o fluxo de potência é calculado novamente para verificar o efeito sobre o restante da rede.
 
-1. Identificar as violações no caso base e examinar as sensibilidades no ANAREDE, usando a ferramenta EXSB.
-2. Escolher os controles e aplicar ajustes de tensão em barras PV, geração ativa ou taps de transformadores.
-3. Recalcular o fluxo de potência e reavaliar as violações após cada ajuste.
-4. Analisar desligamentos de circuitos pelo critério N-1 com a ferramenta EXCA e avaliar novas medidas corretivas.
+Com o caso base ajustado, a ferramenta EXCA é usada para avaliar as contingências N-1. Quando surgem novas violações, o processo de análise e ajuste é repetido.
 
-O documento mostra a correção do caso base e a melhora de diversas contingências. Também registra os limites da metodologia e situações que permaneceram críticas; portanto, seus resultados não equivalem à eliminação de todas as violações em N-1. O detalhamento está na conclusão do próprio relatório.
+Foi possível corrigir o caso base e melhorar o comportamento da rede em diversas contingências. Algumas situações, porém, continuaram críticas com os controles disponíveis. Esses resultados e suas limitações são discutidos na conclusão do relatório.
 
-## Arquivos anteriores: estudo com FLUPOT
+## O que há nos arquivos do FLUPOT
 
-Os arquivos em [`estudo-flupot/`](estudo-flupot/) são as entradas, configurações e resultados do estudo com **FLUPOT**, utilizando arquivos de rede e representação gráfica do ANAREDE. Eles foram mantidos com seus nomes e conteúdos originais e movidos juntos para a mesma pasta.
+**Os arquivos de simulação que já estavam neste repositório foram usados no estudo com FLUPOT.** Eles estão reunidos em [`estudo-flupot/`](estudo-flupot/), junto de um [guia com a função de cada arquivo](estudo-flupot/README.md).
 
-O arquivo `asp_completo.out` identifica a execução do FLUPOT V07.13.04 e registra a convergência alcançada. Os comandos `DOBJ MCNT`, `DCON QGEN VGEN TAPC PGEN` e `DRES FMVA` estão em `codigo_flupot.fpo`. Consulte o [guia dos arquivos FLUPOT](estudo-flupot/README.md) para a função de cada arquivo e os nomes de entrada referenciados na configuração.
+Nesse estudo, o arquivo `codigo_flupot.fpo` define a função objetivo MCNT, os controles de geração e tensão, os taps e a restrição de carregamento FMVA. O resultado da execução está em `asp_completo.out`.
 
-Os arquivos desse estudo com FLUPOT não são apresentados como os arquivos de entrada da metodologia por sensibilidade descrita no novo PDF. As duas abordagens ficam identificadas separadamente neste repositório.
+O relatório de análise de sensibilidade no ANAREDE e os arquivos de otimização com FLUPOT pertencem a abordagens diferentes. Por isso, cada conjunto tem sua própria descrição e localização.
 
-## Identificação do sistema
+## Sobre a rede utilizada
 
-O nome do repositório e a introdução do relatório usam a referência IEEE14. Os arquivos de rede do estudo com FLUPOT trazem o título “SISTEMA 15 BARRAS”, e o relatório também inclui a barra 15 nas análises. Para reproduzir os estudos, use a identificação e os dados de cada material, sem assumir que correspondem ao caso IEEE14 padrão sem alterações.
+Os materiais usam a referência IEEE14, mas também incluem a barra 15. Os arquivos do FLUPOT trazem o título “SISTEMA 15 BARRAS”. Ao consultar ou repetir os estudos, considere os dados dos casos apresentados em cada material.
 
-## Contexto acadêmico
-
-Material da disciplina Análise de Sistemas de Potência, UFRJ, 2026. A autoria do relatório e as referências utilizadas estão preservadas no PDF.
+Trabalhos da disciplina Análise de Sistemas de Potência, UFRJ, 2026. A autoria e as referências do relatório estão no PDF.
