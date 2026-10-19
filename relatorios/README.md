@@ -4,7 +4,7 @@
 
 Este relatório apresenta uma metodologia para corrigir violações operativas com a análise de sensibilidade do **ANAREDE**. O estudo parte da correção do caso base e avalia os ajustes necessários após contingências N-1, considerando seus efeitos sobre o restante da rede.
 
-O trabalho foi elaborado em 2026 pelo Grupo 6 da 
+
 
 ## Como o estudo foi conduzido
 
