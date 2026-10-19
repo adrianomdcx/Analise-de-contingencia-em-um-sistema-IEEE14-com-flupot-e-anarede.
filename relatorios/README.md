@@ -2,39 +2,36 @@
 
 **[Abrir o relatório completo em PDF (56 páginas)](Metodologia_ANAREDE_Sensibilidade_e_Correcao_de_Violacoes_em_Contingencias.pdf)**
 
-O relatório está nesta branch, `metodologia-sensibilidade-anarede`, e foi publicado com um nome de arquivo que descreve seu conteúdo. O PDF original foi preservado integralmente: a alteração se limita ao nome do arquivo.
+Este relatório apresenta uma metodologia para corrigir violações operativas com a análise de sensibilidade do **ANAREDE**. O estudo parte da correção do caso base e avalia os ajustes necessários após contingências N-1, considerando seus efeitos sobre o restante da rede.
 
-## Identificação do documento
+O trabalho foi elaborado em 2026 pelo Grupo 6 da **Universidade Federal do Rio de Janeiro (UFRJ)**: Adriano Macena da Costa, Vitor dos Santos Barcelos, João Pedro Diniz da Rocha e Leonardo de Lima Rodrigues. O título na capa é *Relatório-Análise de sistemas de potência*.
 
-- **Título na capa:** Relatório-Análise de sistemas de potência.
-- **Instituição:** Universidade Federal do Rio de Janeiro (UFRJ), Grupo 6.
-- **Ano:** 2026.
-- **Autores:** Adriano Macena da Costa, Vitor dos Santos Barcelos, João Pedro Diniz da Rocha e Leonardo de Lima Rodrigues.
+## Como o estudo foi conduzido
 
-## O que a metodologia faz
+As sensibilidades ajudam a identificar quais controles têm maior influência sobre as violações de tensão, carregamento e geração de potência reativa. A partir delas, o estudo orienta ajustes de tensão em barras PV, geração ativa e taps de transformadores.
 
-O estudo usa análises de sensibilidade no **ANAREDE** para orientar ajustes de tensão em barras PV, geração ativa e taps de transformadores. Após cada ajuste, recalcula o fluxo de potência e verifica as violações. A metodologia é aplicada inicialmente ao caso base e depois à avaliação de contingências N-1 de circuitos.
+Após cada alteração, o fluxo de potência é recalculado para verificar o efeito sobre toda a rede. Esse processo é repetido até corrigir o caso base e, depois, avaliar os desligamentos de circuitos pelo critério N-1. As ferramentas EXSB e EXCA do ANAREDE apoiam, respectivamente, a análise de sensibilidade e a avaliação das contingências.
 
-| Etapa | Onde consultar no PDF |
+## Guia de leitura
+
+| Conteúdo | Páginas do PDF |
 | --- | --- |
-| Ferramenta EXSB e interpretação das sensibilidades | Páginas 6 a 9 |
-| Estratégia iterativa e fluxograma de correção | Páginas 10 e 11 |
-| Ferramenta EXCA e análise de contingências N-1 | Página 22 |
-| Exemplos de correção das contingências 6-11 e 6-12 | Páginas 29 a 32 |
-| Resultados finais e limitações | Página 55 |
+| EXSB e interpretação das sensibilidades | 6 a 9 |
+| Estratégia de correção e fluxograma | 10 e 11 |
+| EXCA e análise de contingências N-1 | 22 |
+| Exemplos das contingências 6-11 e 6-12 | 29 a 32 |
+| Resultados finais e limitações | 55 |
 
-A tabela usa a contagem física de páginas do PDF, começando pela capa como página 1. A numeração impressa no documento é diferente.
+As páginas acima seguem a contagem do leitor de PDF, incluindo a capa como página 1; elas diferem da numeração impressa.
 
-## Alcance dos resultados
+## Resultados e limitações
 
-A conclusão apresenta a correção do caso base e a melhora de diversas contingências, mas também identifica casos que permaneceram críticos. As contingências 9-14, 13-14 e 4-15 não foram contidas pelos controles disponíveis. Os casos 5-6 e 5-15 permaneceram acima dos limites normais, sendo considerados contidos pelos autores sob limites emergenciais.
+O estudo obteve um caso base sem violações e melhorou a condição de operação em diversas contingências. Também mostrou que o controle com maior sensibilidade nem sempre pode ser usado: seu ajuste pode atingir um limite ou provocar novas violações em outros pontos da rede.
 
-O relatório descreve os resultados obtidos e os limites dos controles considerados; não afirma que todas as violações de contingências foram eliminadas.
+Algumas contingências permaneceram críticas. Os casos **9-14, 13-14 e 4-15** não foram contidos com os controles disponíveis. Já **5-6 e 5-15** permaneceram acima dos limites normais, embora os autores os tenham considerado contidos ao avaliar os limites emergenciais.
 
-## Relação com os arquivos FLUPOT
+## Estudo com FLUPOT
 
-Os arquivos anteriormente publicados no repositório pertencem ao **estudo realizado com FLUPOT**. Eles estão identificados e descritos em [`estudo-flupot/`](../estudo-flupot/README.md), também acessível pela branch `main`.
-
-Este PDF documenta a metodologia de análise de sensibilidade no ANAREDE. Os arquivos do estudo FLUPOT ficam mantidos como outro material do repositório, sem serem apresentados como uma reprodução automática dos casos descritos no relatório.
+O estudo de fluxo de potência ótimo realizado com **FLUPOT**, que já estava neste repositório, está documentado em [`estudo-flupot/`](../estudo-flupot/README.md). A descrição dos arquivos dessa pasta se refere ao estudo de otimização com FLUPOT; a metodologia discutida neste PDF usa a análise de sensibilidade no ANAREDE.
 
 [Voltar à apresentação do repositório](../README.md).
