@@ -29,8 +29,3 @@ Nesse estudo, o arquivo `codigo_flupot.fpo` define a função objetivo MCNT, os 
 
 O relatório de análise de sensibilidade no ANAREDE e os arquivos de otimização com FLUPOT pertencem a abordagens diferentes. Por isso, cada conjunto tem sua própria descrição e localização.
 
-## Sobre a rede utilizada
-
-Os materiais usam a referência IEEE14, mas também incluem a barra 15. Os arquivos do FLUPOT trazem o título “SISTEMA 15 BARRAS”. Ao consultar ou repetir os estudos, considere os dados dos casos apresentados em cada material.
-
-Trabalhos da disciplina Análise de Sistemas de Potência, UFRJ, 2026. A autoria e as referências do relatório estão no PDF.
